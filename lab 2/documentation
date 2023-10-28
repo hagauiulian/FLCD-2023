@@ -1,0 +1,7 @@
+function getId(self,value) : return the position in symbol table of a given value.
+                            returns -1 if the value is not in the table
+
+function sort(self):does a bubble sort on my list and returns the sorted list
+function add(self,value):adds and element into my sortedlist if the element is not already in the list
+                        the added element will be value from the function parameters and the
+                        self.__count from the class which will be incremented everytime we add an element
