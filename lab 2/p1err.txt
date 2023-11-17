@@ -1,0 +1,11 @@
+int 3a;
+int isPrime = 01;
+input a;
+if (a <= 1) { isPrime=0 ;}
+for ( int i = 2 ; i < n; i=i+1)
+{if (n%i == 0) { isPrime=0;
+break;}
+}
+if (isPrime ==0)
+{print ( a) ; print ("is not prime"); }
+else { print(a) ; print("is prime") ;}

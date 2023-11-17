@@ -1,7 +1,34 @@
+
+class SortedList:
+def __init__(self):initializes an empty SortedList with an emptylist and the count of the elements
 function getId(self,value) : return the position in symbol table of a given value.
                             returns -1 if the value is not in the table
 
-function sort(self):does a bubble sort on my list and returns the sorted list
+function sort(self):does a bubble sort on my list and returns the sorted list based on the values
 function add(self,value):adds and element into my sortedlist if the element is not already in the list
                         the added element will be value from the function parameters and the
                         self.__count from the class which will be incremented everytime we add an element
+                        return self.__count -1 in order to retain the position at which i added an element
+
+class SymbolTable:
+def __init__(self): initializes my symbol table with an instance of the class SortedList
+def add(self,value): adds a value to the SymbolTable if it does not exist and returns it
+def get(self,value):return the id associated with the value, returns -1 if it does not exist
+
+class ProgralInternalForm:
+def __init__(self): initializes an empty instance of the class with a list
+def add(self,content,id):add a tuple to my empty list in ProgramInternalForm consisting of content
+                         i want to add to pif and the id(the position in pif)
+
+file scanner:
+def isPartOfOperator(char): checks if the given character is part of an operator from the list of
+                            operators i hardcoded and returns true if it is and false otherwise
+def getOperatorToken(line,index) : it returns a tuple containing the extracted token and the new index
+                                    with the new operator
+def getStringToken(line,index) : extracts the complete string token from the current line and index
+                                 and returns the extracted token and the updated index at which we are
+def tokenGenerator(line,separators): generates my tokens from a given line of code and it yields tokens
+                                     extracted from that line
+def isIdentifier(token):return True if my token a valid identifier and False if not
+def isConstant(token):return True if my token is a valid constant, including constant chars
+                      and constant strings

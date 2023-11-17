@@ -1,6 +1,5 @@
 from model.sortedList import SortedList
 
-
 class SymbolTable:
     def __init__(self):
         self.__sortedList = SortedList()

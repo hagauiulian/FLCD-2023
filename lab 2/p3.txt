@@ -1,0 +1,10 @@
+int n;
+int sum;
+int value;
+sum = 0;
+input (n);
+for ( int i = 1; i <=n ; i=i+1)
+{ input value;
+sum = sum + value;
+}
+print(sum);
