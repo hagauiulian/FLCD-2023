@@ -1,0 +1,30 @@
+For fa.txt:
+<fa-file> ::= <states-section> <alphabet-section> <transitions-section> <initial-section> <final-section>
+<states-section> ::= "states" <state> { <state> }
+<alphabet-section> ::= "alphabet" <symbol> { <symbol> }
+<transitions-section> ::= "transitions" <transition> { <transition> }
+<transition> ::= <state> "," <symbol> "," <state>
+<initial-section> ::= "initial" <state>
+<final-section> ::= "final" <state> { <state> }
+
+
+class FiniteAutomata:
+def __init__ : initializes my FiniteAutomata with
+                -a set for self.states
+                -a set for self.alphabet
+                -a dictionary for self.transitions consisting of a tuple key with start and symbol and value as end
+                -initial state of the fa initialized with none
+                -final states of the fa as a set
+
+ def read_from_file(self,filename): reads from the file
+ -it opens the filename in readmode
+ -for each line in file it strips so it removes whitespaces newlines and other unnecesary stuff
+ -it also splits based on whitespaces each line
+ -it then checks based on the first word of the line if we have states, alphabet, transitions, initial state or final states
+ -then it initializes based on the first word the class atributes
+
+ we have display functions for each class atribute
+
+
+
+
